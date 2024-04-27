@@ -154,9 +154,14 @@
       {
         "component": "select",
         "name": "style",
+        "value": "",
         "label": "Style",
         "valueType": "string",
         "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
           {
             "name": "higlight",
             "value": "highlight"
