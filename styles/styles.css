@@ -208,3 +208,9 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+main .section {
+  &.dark {
+    background-color: var(--dark-color);
+  }
+}
