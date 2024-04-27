@@ -152,7 +152,7 @@
     "id": "section",
     "fields": [
       {
-        "component": "select",
+        "component": "multiselect",
         "name": "style",
         "value": "",
         "label": "Style",
