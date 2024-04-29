@@ -137,7 +137,7 @@
           }
         },
         {
-          "title": "Api Block",
+          "title": "Api BlockTitle",
           "id": "apiblock",
           "plugins": {
             "xwalk": {
