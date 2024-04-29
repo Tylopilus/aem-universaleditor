@@ -1,0 +1,26 @@
+version: 1
+
+indices:
+  all:
+    include:
+      - '/**'
+    target: /query-index.json
+    properties:
+      path:
+        select: none
+        value: |
+          replace(path, '/publish/', '/')
+      title:
+        select: head > meta[property="og:title"]
+        value: |
+          attribute(el, 'content')
+      description:
+        select: head > meta[property="og:description"]
+        value: |
+          attribute(el, 'content')
+      tags:
+        select: head > meta[name="cq-tags"]
+        value: |
+          attribute(el, 'content')
+
+
