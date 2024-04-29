@@ -28,7 +28,8 @@
       "hero",
       "cards",
       "columns",
-      "apiblockID"
+      "apiblockID",
+      "customtitle"
     ]
   },
   {
