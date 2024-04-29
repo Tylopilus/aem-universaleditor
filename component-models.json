@@ -10,6 +10,13 @@
         "label": "Text"
       },
       {
+        "component": "aem-content",
+        "valueType":"string",
+        "name":"href",
+        "value": "",
+        "label": "Link"
+      },
+      {
         "component": "select",
         "name": "type",
         "value": "h1",
