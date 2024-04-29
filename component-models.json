@@ -12,7 +12,7 @@
       {
         "component": "aem-content",
         "valueType":"string",
-        "name":"href",
+        "name":"chref",
         "value": "",
         "label": "Link"
       },
