@@ -25,7 +25,7 @@ export const calcEnvironment = () => {
 
 function buildConfigURL(environment) {
   const env = environment || calcEnvironment();
-  const configURL = new URL('/configs.json');
+  const configURL = new URL(`${window.location.origin}/configs.json`);
   // configURL.searchParams.set('sheet', env);
   return configURL;
 }
@@ -33,10 +33,10 @@ function buildConfigURL(environment) {
 const getConfigForEnvironment = async (environment) => {
   const env = environment || calcEnvironment();
   let configJSON = window.sessionStorage.getItem(`config:${env}`);
-  if (!configJSON) {
-    configJSON = await fetch('/configs.json').then((res) => res.text());
-    window.sessionStorage.setItem(`config:${env}`, configJSON);
-  }
+  configJSON = await fetch(buildConfigURL(env)).then((res) => res.text());
+  // if (!configJSON) {
+  //   window.sessionStorage.setItem(`config:${env}`, configJSON);
+  // }
   return configJSON;
 };
 
