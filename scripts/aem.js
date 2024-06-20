@@ -1,5 +1,4 @@
 // eslint-disable-next-line no-unused-vars
-import _importmap from './importmap.js';
 /*
  * Copyright 2024 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
