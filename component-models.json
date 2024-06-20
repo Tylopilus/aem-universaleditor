@@ -239,6 +239,18 @@
     ]
   },
   {
+    "id": "spreadsheet-input",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "source",
+        "value": "",
+        "label": "Source"
+      }
+    ]
+  },
+  {
     "id": "apiblock",
     "fields": [
       {
