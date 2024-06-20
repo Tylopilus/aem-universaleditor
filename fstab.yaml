@@ -1,5 +1,8 @@
 mountpoints:
   /:
-    url: "https://author-p24706-e491522.adobeaemcloud.com/bin/franklin.delivery/tylopilus/aem-universaleditor/main"
-    type: "markup"
-    suffix: ".html"
+    url: 'https://author-p24706-e491522.adobeaemcloud.com/bin/franklin.delivery/tylopilus/aem-universaleditor/main'
+    type: 'markup'
+    suffix: '.html'
+
+folders:
+  /products/: /products/default
