@@ -11,8 +11,8 @@
       },
       {
         "component": "aem-content",
-        "valueType":"string",
-        "name":"deaf",
+        "valueType": "string",
+        "name": "deaf",
         "value": "",
         "label": "Link"
       }
@@ -30,8 +30,8 @@
       },
       {
         "component": "aem-content",
-        "valueType":"string",
-        "name":"chref",
+        "valueType": "string",
+        "name": "chref",
         "value": "",
         "label": "Link"
       },
@@ -256,5 +256,9 @@
         "label": "URL"
       }
     ]
+  },
+  {
+    "id": "product-recommendations",
+    "fields": []
   }
 ]
