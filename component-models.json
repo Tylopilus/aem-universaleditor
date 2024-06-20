@@ -277,7 +277,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "urlpath_label",
+        "name": "urlpath_el",
         "value": "urlpath",
         "label": "urlPath Label"
       },
@@ -286,7 +286,7 @@
         "valueType": "string",
         "name": "urlpath_val",
         "value": "gear",
-        "label": "urlPath"
+        "label": "urlPath Val"
       }
     ]
   }
