@@ -192,7 +192,7 @@
                   "model": "productslistpage",
                   "key-value": true,
                   "category": "4",
-                  "urlPath": "gear"
+                  "urlpath": "gear"
                 }
               }
             }
