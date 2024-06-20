@@ -258,21 +258,21 @@
     ]
   },
   {
-    "id": "productrecommendations",
+    "id": "productslistpage",
     "fields": [
       {
         "component": "text",
         "valueType": "string",
-        "name": "title",
+        "name": "category",
         "value": "",
-        "label": "Title"
+        "label": "Category"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "url",
+        "name": "urlPath",
         "value": "",
-        "label": "URL"
+        "label": "urlPath"
       }
     ]
   }
