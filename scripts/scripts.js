@@ -147,6 +147,15 @@ export function decorateMain(main) {
   decorateBlocks(main);
 }
 
+function preloadFile(href, as) {
+  const link = document.createElement('link');
+  link.rel = 'preload';
+  link.as = as;
+  link.crossOrigin = 'anonymous';
+  link.href = href;
+  document.head.appendChild(link);
+}
+
 /**
  * Loads everything needed to get to LCP.
  * @param {Element} doc The container element
