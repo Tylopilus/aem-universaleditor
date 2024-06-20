@@ -33,10 +33,21 @@ function buildConfigURL(environment) {
 const getConfigForEnvironment = async (environment) => {
   const env = environment || calcEnvironment();
   let configJSON = window.sessionStorage.getItem(`config:${env}`);
-  configJSON = await fetch(buildConfigURL(env)).then((res) => res.text());
-  // if (!configJSON) {
-  //   window.sessionStorage.setItem(`config:${env}`, configJSON);
-  // }
+  if (!configJSON) {
+    let configJSONPromise = await fetch(buildConfigURL(env));
+    if (!configJSONPromise.ok) {
+      configJSONPromise = await fetch(
+        '/content/helge-universal-editor.commerce.resource/configs.json'
+      );
+    }
+    try {
+      configJSON = await configJSONPromise.text();
+    } catch (e) {
+      console.error('Failed to load config:', e);
+      return undefined;
+    }
+    window.sessionStorage.setItem(`config:${env}`, configJSON);
+  }
   return configJSON;
 };
 
