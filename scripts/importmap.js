@@ -17,7 +17,7 @@
   scriptElement.type = 'importmap';
   scriptElement.textContent = JSON.stringify(importMap, null, 2); // Pretty print for readability
 
-  document.head.appendChild(scriptElement); // Insert in the head or wherever needed
+  document.head.prepend(scriptElement); // Insert in the head or wherever needed
 
   // Optionally, you can verify it works:
   console.log('Import map added:', scriptElement);
