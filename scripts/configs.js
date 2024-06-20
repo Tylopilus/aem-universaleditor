@@ -25,7 +25,7 @@ export const calcEnvironment = () => {
 
 function buildConfigURL(environment) {
   const env = environment || calcEnvironment();
-  const configURL = '/query-index.json';
+  const configURL = '/test.json';
   // configURL.searchParams.set('sheet', env);
   return configURL;
 }
