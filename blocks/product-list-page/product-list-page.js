@@ -3,14 +3,18 @@ import { getConfigValue } from '../../scripts/configs.js';
 
 export default async function decorate(block) {
   // eslint-disable-next-line import/no-absolute-path, import/no-unresolved
-  await import('/scripts/widgets/search.js');
+  await import('../../scripts/widgets/search.js');
 
   const { category, urlpath, type } = readBlockConfig(block);
   block.textContent = '';
 
   const storeDetails = {
     environmentId: await getConfigValue('commerce-environment-id'),
-    environmentType: (await getConfigValue('commerce-endpoint')).includes('sandbox') ? 'testing' : '',
+    environmentType: (await getConfigValue('commerce-endpoint')).includes(
+      'sandbox'
+    )
+      ? 'testing'
+      : '',
     apiKey: await getConfigValue('commerce-x-api-key'),
     websiteCode: await getConfigValue('commerce-website-code'),
     storeCode: await getConfigValue('commerce-store-code'),
@@ -32,12 +36,16 @@ export default async function decorate(block) {
       listview: true,
       displayMode: '', // "" for plp || "PAGE" for category/catalog
       addToCart: async (...args) => {
-        const { addProductsToCart } = await import('../../scripts/__dropins__/storefront-cart/api.js');
-        await addProductsToCart([{
-          sku: args[0],
-          options: args[1],
-          quantity: args[2],
-        }]);
+        const { addProductsToCart } = await import(
+          '../../scripts/__dropins__/storefront-cart/api.js'
+        );
+        await addProductsToCart([
+          {
+            sku: args[0],
+            options: args[1],
+            quantity: args[2],
+          },
+        ]);
       },
     },
     context: {
@@ -47,7 +55,9 @@ export default async function decorate(block) {
   };
 
   if (type !== 'search') {
-    storeDetails.config.categoryName = document.querySelector('.default-content-wrapper > h1')?.innerText;
+    storeDetails.config.categoryName = document.querySelector(
+      '.default-content-wrapper > h1'
+    )?.innerText;
     storeDetails.config.currentCategoryId = category;
     storeDetails.config.currentCategoryUrlPath = urlpath;
 
