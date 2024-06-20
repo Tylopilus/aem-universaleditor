@@ -34,7 +34,7 @@ const getConfigForEnvironment = async (environment) => {
   const env = environment || calcEnvironment();
   let configJSON = window.sessionStorage.getItem(`config:${env}`);
   if (!configJSON) {
-    configJSON = await fetch(buildConfigURL(env)).then((res) => res.text());
+    configJSON = await fetch('/configs.json').then((res) => res.text());
     window.sessionStorage.setItem(`config:${env}`, configJSON);
   }
   return configJSON;
