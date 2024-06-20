@@ -270,7 +270,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "category_value",
+        "name": "category_val",
         "value": "4",
         "label": "Category"
       },
@@ -284,7 +284,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "urlpath_value",
+        "name": "urlpath_val",
         "value": "gear",
         "label": "urlPath"
       }
