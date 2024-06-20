@@ -257,12 +257,16 @@ export function renderPrice(
 export function getSkuFromUrl() {
   const path = window.location.pathname;
   const result = path.match(/\/products\/[\w|-]+\/([\w|-]+)$/);
-  return result?.[1];
+  if (!result || !result[1]) {
+    return null;
+  }
+  return result?.[1].toUpperCase();
 }
 
 const productsCache = {};
 export async function getProduct(sku) {
   if (!sku) {
+    console.log('No SKU provided');
     return null;
   }
   // eslint-disable-next-line no-param-reassign
