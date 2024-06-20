@@ -80,7 +80,11 @@ function renderItem(unitId, product) {
 
   const item = document.createRange()
     .createContextualFragment(`<div class="product-grid-item">
-    <a href="/products/${urlKey}/${product.sku.toLowerCase()}">
+    <a href="${
+      window.location.origin.startsWith('http://author.')
+        ? '/content/helge-universal-editor'
+        : ''
+    }/products/${urlKey}/${product.sku.toLowerCase()}">
       <picture>
         <source type="image/webp" srcset="${image}?width=300&format=webply&optimize=medium" />
         <img loading="lazy" alt="${
