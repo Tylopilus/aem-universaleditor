@@ -5,11 +5,11 @@
   "data": [
     {
       "key": "commerce-endpoint",
-      "value": "https://catalog-service.adobe.io/graphql"
+      "value": "https://catalog-service-sandbox.adobe.io/graphql"
     },
     {
       "key": "commerce-environment-id",
-      "value": "f38a0de0-764b-41fa-bd2c-5bc2f3c7b39a"
+      "value": "5c4884dd-a0bb-41ee-aab4-40b0d5978a2b"
     },
     {
       "key": "commerce-website-code",
@@ -17,7 +17,7 @@
     },
     {
       "key": "commerce-store-view-code",
-      "value": "default"
+      "value": "de"
     },
     {
       "key": "commerce-store-code",
@@ -29,11 +29,11 @@
     },
     {
       "key": "commerce-x-api-key",
-      "value": "4dfa19c9fe6f4cccade55cc5b3da94f7"
+      "value": "f61331cb74394f1b907e58630a86a8df"
     },
     {
       "key": "commerce-core-endpoint",
-      "value": "https://mcprod.aemshop.net/graphql"
+      "value": "https://graph.adobe.io/api/ad447ab3-804c-434d-9f47-f02e14b16b79/graphql?api_key=2cfb97f1fd074569860248c63b7bcfdc"
     },
     {
       "key": "commerce-root-category-id",
@@ -41,7 +41,7 @@
     },
     {
       "key": "commerce-environment",
-      "value": "Production"
+      "value": "Testing"
     },
     {
       "key": "commerce-store-id",
@@ -53,7 +53,7 @@
     },
     {
       "key": "commerce-store-url",
-      "value": "https://mcprod.aemshop.net/"
+      "value": "https://power-pack-az5hjaa-bm5l4hpp6cb3s.eu-4.magentosite.cloud/"
     },
     {
       "key": "commerce-store-view-id",
@@ -61,7 +61,7 @@
     },
     {
       "key": "commerce-store-view-name",
-      "value": "Default Store View"
+      "value": "German"
     },
     {
       "key": "commerce-website-id",
@@ -73,7 +73,7 @@
     },
     {
       "key": "commerce-base-currency-code",
-      "value": "USD"
+      "value": "EUR"
     },
     {
       "key": "adyen-client-key",
