@@ -342,7 +342,13 @@ function loadDelayed() {
   import('./sidekick.js').then(({ initSidekick }) => initSidekick());
 }
 
-function createImportMap() {
+async function loadPage() {
+  await loadEager(document);
+  await loadLazy(document);
+  loadDelayed();
+}
+(async () => {
+  // Your dynamic import map creation code
   const importMap = {
     imports: {
       '@dropins/tools/': '/scripts/__dropins__/tools/',
@@ -361,13 +367,10 @@ function createImportMap() {
   scriptElement.textContent = JSON.stringify(importMap, null, 2); // Pretty print for readability
 
   document.head.appendChild(scriptElement); // Insert in the head or wherever needed
-}
-async function loadPage() {
-  createImportMap();
-  await loadEager(document);
-  await loadLazy(document);
-  loadDelayed();
-}
+
+  // Optionally, you can verify it works:
+  console.log('Import map added:', scriptElement);
+})();
 
 loadPage();
 export function getConsent() {
