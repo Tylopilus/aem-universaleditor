@@ -169,7 +169,7 @@
         },
         {
           "title": "Product recommendations",
-          "id": "product-recommendations",
+          "id": "productrecommendations",
           "plugins": {
             "xwalk": {
               "page": {
