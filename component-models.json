@@ -263,7 +263,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "category_label",
+        "name": "category",
         "value": "category",
         "label": "Category Label"
       },
