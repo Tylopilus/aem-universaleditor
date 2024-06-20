@@ -2,6 +2,7 @@
   "mappings": [
     "/content/helge-universal-editor/:/",
     "/content/helge-universal-editor/configuration:/.helix/config.json",
-    "/content/helge-universal-editor.resource/query-index.json:/query-index.json"
+    "/content/helge-universal-editor.resource/query-index.json:/query-index.json",
+    "/content/helge-universal-editor.resource/paths.json:/paths.json"
   ]
 }
