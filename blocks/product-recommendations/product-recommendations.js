@@ -81,7 +81,7 @@ function renderItem(unitId, product) {
   const item = document.createRange()
     .createContextualFragment(`<div class="product-grid-item">
     <a href="${
-      window.location.origin.startsWith('http://author.')
+      window.location.origin.startsWith('https://author.')
         ? '/content/helge-universal-editor'
         : ''
     }/products/${urlKey}/${product.sku.toLowerCase()}">
