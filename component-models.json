@@ -263,9 +263,23 @@
       {
         "component": "text",
         "valueType": "string",
+        "name": "category_label",
+        "value": "category",
+        "label": "Category Label"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
         "name": "category_value",
         "value": "4",
         "label": "Category"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "urlpath_label",
+        "value": "urlpath",
+        "label": "urlPath Label"
       },
       {
         "component": "text",
