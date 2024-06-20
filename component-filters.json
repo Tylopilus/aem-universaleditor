@@ -23,7 +23,8 @@
       "columns",
       "apiblockID",
       "customtitle",
-      "productrecommendations"
+      "productrecommendations",
+      "productdetails"
     ]
   },
   {
