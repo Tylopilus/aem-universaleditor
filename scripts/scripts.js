@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import _importmap from './importmap.js';
 /* eslint-disable import/no-cycle */
 import { events } from '@dropins/tools/event-bus.js';
 import {
