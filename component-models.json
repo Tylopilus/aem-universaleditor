@@ -239,14 +239,21 @@
     ]
   },
   {
-    "id": "spreadsheet-input",
+    "id": "productslistpage",
     "fields": [
       {
         "component": "text",
         "valueType": "string",
-        "name": "source",
+        "name": "category",
         "value": "",
-        "label": "Source"
+        "label": "Category"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "urlpath",
+        "value": "",
+        "label": "Url Path"
       }
     ]
   },
@@ -266,39 +273,6 @@
         "name": "url",
         "value": "",
         "label": "URL"
-      }
-    ]
-  },
-  {
-    "id": "productslistpage",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "category",
-        "value": "category",
-        "label": "Category Label"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "category_val",
-        "value": "4",
-        "label": "Category"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "urlpath_el",
-        "value": "urlpath",
-        "label": "urlPath Label"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "urlpath_val",
-        "value": "gear",
-        "label": "urlPath Val"
       }
     ]
   }
