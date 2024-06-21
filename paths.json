@@ -3,7 +3,7 @@
     "/content/helge-universal-editor/:/",
     "/content/helge-universal-editor/configuration:/.helix/config.json",
     "/content/helge-universal-editor.resource/query-index.json:/query-index.json",
-    "/content/helge-universal-editor.resource/commerce.configs.json:/commerce.configs.json",
+    "/content/helge-universal-editor.resource/commerceconfigs.json:/commerceconfigs.json",
     "/content/helge-universal-editor.resource/enrichment/enrichment.json:/enrichment/enrichment.json"
   ]
 }
