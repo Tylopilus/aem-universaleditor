@@ -27,7 +27,9 @@
       "productdetails",
       "productslistpage",
       "enrichment",
-      "commerce-cart"
+      "commerce-cart",
+      "commerce-order-confirmation",
+      "commerce-checkout"
     ]
   },
   {
