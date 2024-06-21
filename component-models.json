@@ -156,18 +156,6 @@
     ]
   },
   {
-    "id": "cards",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "value": "",
-        "label": "Title"
-      }
-    ]
-  },
-  {
     "id": "card",
     "fields": [
       {
