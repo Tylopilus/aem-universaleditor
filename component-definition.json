@@ -264,26 +264,6 @@
           }
         }
       ]
-    },
-    {
-      "title": "Metadata Blocks",
-      "id": "Metadatablocks",
-      "components": [
-        {
-          "title": "Metadata",
-          "id": "metadata",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/spreadsheet/v1/spreadsheet",
-                "template": {
-                  "name": "Metadata"
-                }
-              }
-            }
-          }
-        }
-      ]
     }
   ]
 }
