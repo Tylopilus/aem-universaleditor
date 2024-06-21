@@ -196,6 +196,10 @@ header nav .nav-sections ul>li>ul>li {
     position: relative;
     padding-right: 16px;
     cursor: pointer;
+
+    a {
+      color: var(--color-brand-700);
+    }
   }
 
   header nav .nav-sections .nav-drop::after {
@@ -222,6 +226,8 @@ header nav .nav-sections ul>li>ul>li {
     display: flex;
     gap: 2em;
     margin: 0;
+    align-items: center;
+    margin-inline-start: 2rem;
   }
 
   header nav .nav-sections .default-content-wrapper>ul>li {
