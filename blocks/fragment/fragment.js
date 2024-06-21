@@ -18,7 +18,7 @@ export async function loadFragment(path) {
     const fetchPath = window.location.href.includes(
       'adobeaemcloud.com/products/'
     )
-      ? `/content/helge-univeral-editor${path}.plain.html`
+      ? `/content/helge-universal-editor${path}.plain.html`
       : `${path}.plain.html`;
     const resp = await fetch(fetchPath);
     if (resp.ok) {
