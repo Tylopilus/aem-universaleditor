@@ -298,6 +298,6 @@ export default async function decorate(block) {
   block.append(navWrapper);
 
   // TODO: Following statements added for demo purpose (Auth Drop-In)
-  renderAuthCombine(navSections);
+  // renderAuthCombine(navSections);
   renderAuthDropdown(navTools);
 }
