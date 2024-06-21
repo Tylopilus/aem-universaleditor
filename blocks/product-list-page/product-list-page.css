@@ -16,6 +16,10 @@
         >:nth-child(2) {
             display: none;
         }
+
+        >:last-child {
+            height: auto;
+        }
     }
 }
 
