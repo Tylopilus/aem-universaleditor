@@ -150,134 +150,134 @@
               }
             }
           }
-        },
+        }
+      ]
+    },
+    {
+      "title": "Commerce Blocks",
+      "id": "commerce-blocks",
+      "components": [
         {
-          "title": "Commerce Blocks",
-          "id": "commerce-blocks",
-          "components": [
-            {
-              "title": "Products Recommendations",
-              "id": "productrecommendations",
-              "plugins": {
-                "xwalk": {
-                  "page": {
-                    "resourceType": "core/franklin/components/block/v1/block",
-                    "template": {
-                      "name": "Product Recommendations"
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "title": "Products Details",
-              "id": "productdetails",
-              "plugins": {
-                "xwalk": {
-                  "page": {
-                    "resourceType": "core/franklin/components/block/v1/block",
-                    "template": {
-                      "name": "Product Details"
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "title": "Products List Page",
-              "id": "productslistpage",
-              "plugins": {
-                "xwalk": {
-                  "page": {
-                    "resourceType": "core/franklin/components/block/v1/block",
-                    "template": {
-                      "name": "Product List Page",
-                      "model": "productslistpage",
-                      "key-value": true,
-                      "category": "4",
-                      "urlpath": "gear"
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "title": "Enrichment",
-              "id": "enrichment",
-              "plugins": {
-                "xwalk": {
-                  "page": {
-                    "resourceType": "core/franklin/components/block/v1/block",
-                    "template": {
-                      "name": "Enrichment",
-                      "model": "enrichment",
-                      "key-value": true,
-                      "type": "category",
-                      "position": "below-product"
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "title": "Commerce Order Confirmation",
-              "id": "commerce-order-confirmation",
-              "plugins": {
-                "xwalk": {
-                  "page": {
-                    "resourceType": "core/franklin/components/block/v1/block",
-                    "template": {
-                      "name": "Commerce Order Confirmation"
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "title": "Commerce Checkout",
-              "id": "commerce-checkout",
-              "plugins": {
-                "xwalk": {
-                  "page": {
-                    "resourceType": "core/franklin/components/block/v1/block",
-                    "template": {
-                      "name": "Commerce Checkout"
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "title": "Commerce Cart",
-              "id": "commerce-cart",
-              "plugins": {
-                "xwalk": {
-                  "page": {
-                    "resourceType": "core/franklin/components/block/v1/block",
-                    "template": {
-                      "name": "Commerce Cart"
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        {
-          "title": "Metadata",
-          "id": "metadata",
+          "title": "Products Recommendations",
+          "id": "productrecommendations",
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/spreadsheet/v1/spreadsheet",
+                "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
-                  "name": "Metadata"
+                  "name": "Product Recommendations"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Products Details",
+          "id": "productdetails",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Product Details"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Products List Page",
+          "id": "productslistpage",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Product List Page",
+                  "model": "productslistpage",
+                  "key-value": true,
+                  "category": "4",
+                  "urlpath": "gear"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Enrichment",
+          "id": "enrichment",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Enrichment",
+                  "model": "enrichment",
+                  "key-value": true,
+                  "type": "category",
+                  "position": "below-product"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Commerce Order Confirmation",
+          "id": "commerce-order-confirmation",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Commerce Order Confirmation"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Commerce Checkout",
+          "id": "commerce-checkout",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Commerce Checkout"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Commerce Cart",
+          "id": "commerce-cart",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Commerce Cart"
                 }
               }
             }
           }
         }
       ]
+    },
+    {
+      "title": "Metadata",
+      "id": "metadata",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/spreadsheet/v1/spreadsheet",
+            "template": {
+              "name": "Metadata"
+            }
+          }
+        }
+      }
     }
   ]
 }
