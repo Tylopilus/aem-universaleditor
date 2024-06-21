@@ -34,12 +34,7 @@ const getConfigForEnvironment = async (environment) => {
   const env = environment || calcEnvironment();
   let configJSON = window.sessionStorage.getItem(`config:${env}`);
   if (!configJSON) {
-    let configJSONPromise = await fetch(buildConfigURL(env));
-    if (!configJSONPromise.ok) {
-      configJSONPromise = await fetch(
-        '/content/helge-universal-editor.commerce.resource/configs.json'
-      );
-    }
+    const configJSONPromise = await fetch(buildConfigURL(env));
     try {
       configJSON = await configJSONPromise.text();
     } catch (e) {
