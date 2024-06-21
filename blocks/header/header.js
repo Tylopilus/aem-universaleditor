@@ -137,10 +137,17 @@ export default async function decorate(block) {
   });
 
   const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
+  const brandLink = navBrand?.querySelector('.button');
+  const brandImg = navBrand?.querySelector('picture');
   if (brandLink) {
     brandLink.className = '';
     brandLink.closest('.button-container').className = '';
+
+    const clone = brandImg?.cloneNode(true);
+    if (clone) {
+      brandLink.firstChild?.replaceWith(clone);
+      brandImg?.parentElement?.remove();
+    }
   }
 
   const navSections = nav.querySelector('.nav-sections');
