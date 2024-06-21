@@ -324,6 +324,11 @@
       },
       {
         "component": "text",
+        "name": "enrichment-categories",
+        "label": "Enrichment Categories"
+      },
+      {
+        "component": "text",
         "name": "enrichment-positions",
         "label": "Enrichment Positions"
       }
