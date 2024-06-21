@@ -282,12 +282,13 @@
       {
         "component": "text",
         "name": "type",
-        "label": "Type"
+        "label": "Type",
+        "value": "category"
       },
       {
         "component": "select",
-        "name": "type",
-        "label": "Type",
+        "name": "position",
+        "label": "Position",
         "valueType": "string",
         "value": "below-product",
         "options": [
