@@ -1,6 +1,22 @@
 /* stylelint-disable selector-class-pattern */
 .product-list-page {
     min-height: 700px;
+
+    .ds-sdk-product-item {
+        &:hover {
+            border: none;
+        }
+    }
+
+    .ds-widgets_results {
+        >:nth-child(1) {
+            height: auto;
+        }
+
+        >:nth-child(2) {
+            display: none;
+        }
+    }
 }
 
 .product-list-page .ds-sdk-product-item__image img {
@@ -8,7 +24,7 @@
     object-fit: contain;
 }
 
-@media (width >= 750px) {
+@media (width >=750px) {
     .product-list-page {
         min-height: auto;
     }
