@@ -242,6 +242,23 @@
         "name": "urlpath",
         "value": "",
         "label": "Url Path"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "type",
+        "value": "",
+        "label": "Type",
+        "options": [
+          {
+            "name": "Category",
+            "value": ""
+          },
+          {
+            "name": "Search",
+            "value": "search"
+          }
+        ]
       }
     ]
   },
