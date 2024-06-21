@@ -316,6 +316,16 @@
         "component": "text",
         "name": "theme",
         "label": "Theme"
+      },
+      {
+        "component": "text",
+        "name": "enrichment-products",
+        "label": "Enrichment Products"
+      },
+      {
+        "component": "text",
+        "name": "enrichment-positions",
+        "label": "Enrichment Positions"
       }
     ]
   }
