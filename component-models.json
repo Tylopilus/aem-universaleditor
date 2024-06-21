@@ -277,6 +277,33 @@
     ]
   },
   {
+    "id": "enrichment",
+    "fields": [
+      {
+        "component": "text",
+        "name": "type",
+        "label": "Type"
+      },
+      {
+        "component": "select",
+        "name": "type",
+        "label": "Type",
+        "valueType": "string",
+        "value": "below-product",
+        "options": [
+          {
+            "name": "Below Product",
+            "value": "below-product"
+          },
+          {
+            "name": "Above Product",
+            "value": "above-product"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "page-metadata",
     "fields": [
       {
