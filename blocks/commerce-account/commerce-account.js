@@ -28,14 +28,14 @@ export default async function decorate(block) {
   const token = getCookie('auth_dropin_user_token');
 
   if (!token) {
-    window.location.href = '/customer/login';
+    window.location.href = `${window.hlx.basePath}/customer/login`;
   }
 
   document.body.classList.add('my-account-element');
 
   getCustomer(token).then((response) => {
     if (!response?.data?.customer) {
-      window.location.href = '/';
+      window.location.href = ${window.hlx.basePath};
     }
 
     const {
@@ -86,12 +86,16 @@ export default async function decorate(block) {
         <li class="mb-4">
           <div>${i + 1}.</div>
           <div>Order ${el.order_number || el.number}</div>
-          <div class="is-size-6">${convertDateFormat(el.created_at || el.order_date)}</div>
-          <span class="tag ${validateOrdersStatus(el.status)}">${el.status}</span>
+          <div class="is-size-6">${convertDateFormat(
+            el.created_at || el.order_date
+          )}</div>
+          <span class="tag ${validateOrdersStatus(el.status)}">${
+          el.status
+        }</span>
         </li>`;
         return acc + orderHTML;
       },
-      items.length ? '' : '<div></div>',
+      items.length ? '' : '<div></div>'
     );
 
     block.insertAdjacentHTML(
@@ -145,14 +149,14 @@ export default async function decorate(block) {
   </div>
     </section>
   </main>
-  </div>`,
+  </div>`
     );
 
     const logoutDashboard = document.querySelector('.logoutDashboard');
 
     logoutDashboard.addEventListener('click', async () => {
       await authApi.revokeCustomerToken();
-      window.location.href = '/customer/login';
+      window.location.href = `${window.hlx.basePath}/customer/login`;
     });
   });
 }
