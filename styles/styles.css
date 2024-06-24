@@ -248,7 +248,7 @@ a:not(.dropin-design a) {
 }
 
 a:not(.dropin-design a):hover {
-  text-decoration: solid underline var(--color-brand-700);
+  /* text-decoration: solid underline var(--color-brand-700); */
   text-underline-offset: 6px;
   color: var(--color-brand-700);
 }
