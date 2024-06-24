@@ -35,7 +35,7 @@ export default async function decorate(block) {
 
   getCustomer(token).then((response) => {
     if (!response?.data?.customer) {
-      window.location.href = ${window.hlx.basePath};
+      window.location.href = window.hlx.basePath;
     }
 
     const {
