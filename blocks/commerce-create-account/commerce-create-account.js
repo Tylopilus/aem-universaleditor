@@ -11,12 +11,20 @@ export default function decorate(block) {
   const isAuthenticated = !!getCookie('auth_dropin_user_token');
 
   if (isAuthenticated) {
-    window.location.href = window.hlx.basePath ? `${window.hlx.basePath}/customer/account.html` : '/customer/account',
+    window.location.href = window.hlx.basePath
+      ? `${window.hlx.basePath}/customer/account.html`
+      : '/customer/account';
   } else {
     authRenderer.render(SignUp, {
       hideCloseBtnOnEmailConfirmation: true,
-      routeSignIn: () => window.hlx.basePath ? `${window.hlx.basePath}/customer/login.html` : '/customer/login',
-      routeRedirectOnSignIn: () => window.hlx.basePath ? `${window.hlx.basePath}/customer/account.html` : '/customer/account',
+      routeSignIn: () =>
+        window.hlx.basePath
+          ? `${window.hlx.basePath}/customer/login.html`
+          : '/customer/login',
+      routeRedirectOnSignIn: () =>
+        window.hlx.basePath
+          ? `${window.hlx.basePath}/customer/account.html`
+          : '/customer/account',
       successNotificationForm: (userName) =>
         h(SuccessNotification, {
           headingText: `Welcome ${userName}!`,
@@ -24,7 +32,9 @@ export default function decorate(block) {
           primaryButtonText: 'My Account',
           secondaryButtonText: 'Logout',
           onPrimaryButtonClick: () => {
-            window.location.href = window.hlx.basePath ? `${window.hlx.basePath}/customer/account.html` : '/customer/account';
+            window.location.href = window.hlx.basePath
+              ? `${window.hlx.basePath}/customer/account.html`
+              : '/customer/account';
           },
           onSecondaryButtonClick: async () => {
             await authApi.revokeCustomerToken();
