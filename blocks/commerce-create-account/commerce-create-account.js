@@ -11,25 +11,28 @@ export default function decorate(block) {
   const isAuthenticated = !!getCookie('auth_dropin_user_token');
 
   if (isAuthenticated) {
-    window.location.href = '/customer/account';
+    window.location.href = window.hlx.basePath ? `${window.hlx.basePath}/customer/account.html` : '/customer/account',
   } else {
     authRenderer.render(SignUp, {
       hideCloseBtnOnEmailConfirmation: true,
-      routeSignIn: () => '/customer/login',
-      routeRedirectOnSignIn: () => '/customer/account',
-      successNotificationForm: (userName) => h(SuccessNotification, {
-        headingText: `Welcome ${userName}!`,
-        messageText: 'Your account has been successfully created.',
-        primaryButtonText: 'My Account',
-        secondaryButtonText: 'Logout',
-        onPrimaryButtonClick: () => {
-          window.location.href = '/customer/account';
-        },
-        onSecondaryButtonClick: async () => {
-          await authApi.revokeCustomerToken();
-          window.location.href = '/';
-        },
-      }),
+      routeSignIn: () => window.hlx.basePath ? `${window.hlx.basePath}/customer/login.html` : '/customer/login',
+      routeRedirectOnSignIn: () => window.hlx.basePath ? `${window.hlx.basePath}/customer/account.html` : '/customer/account',
+      successNotificationForm: (userName) =>
+        h(SuccessNotification, {
+          headingText: `Welcome ${userName}!`,
+          messageText: 'Your account has been successfully created.',
+          primaryButtonText: 'My Account',
+          secondaryButtonText: 'Logout',
+          onPrimaryButtonClick: () => {
+            window.location.href = window.hlx.basePath ? `${window.hlx.basePath}/customer/account.html` : '/customer/account';
+          },
+          onSecondaryButtonClick: async () => {
+            await authApi.revokeCustomerToken();
+            window.location.href = window.hlx.basePath
+              ? `${window.hlx.basePath}/index.html`
+              : `/`;
+          },
+        }),
     })(block);
   }
 }
