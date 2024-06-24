@@ -328,9 +328,19 @@
         "label": "Enrichment Categories"
       },
       {
-        "component": "text",
+        "component": "select",
         "name": "enrichment-positions",
-        "label": "Enrichment Positions"
+        "label": "Enrichment Positions",
+        "options": [
+          {
+            "name": "Below Product",
+            "value": "below-product"
+          },
+          {
+            "name": "Above Product",
+            "value": "above-product"
+          }
+        ]
       }
     ]
   },
