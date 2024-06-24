@@ -29,7 +29,9 @@
       "enrichment",
       "commerce-cart",
       "commerce-order-confirmation",
-      "commerce-checkout"
+      "commerce-checkout",
+      "commerce-login",
+      "commerce-account"
     ]
   },
   {
