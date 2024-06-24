@@ -287,7 +287,7 @@
                 "template": {
                   "model": "commerce-account",
                   "key-value": true,
-                  "name": "Customer Account",
+                  "name": "Commerce Account",
                   "subpage": "myaccount"
                 }
               }
