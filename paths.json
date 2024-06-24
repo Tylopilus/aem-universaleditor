@@ -1,7 +1,6 @@
 {
   "mappings": [
     "/content/helge-universal-editor/:/",
-    "/content/helge-universal-editor/products/default:/products/*",
     "/content/helge-universal-editor/configuration:/.helix/config.json",
     "/content/helge-universal-editor.resource/query-index.json:/query-index.json",
     "/content/helge-universal-editor.resource/commerceconfigs.json:/commerceconfigs.json",
