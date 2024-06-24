@@ -333,5 +333,16 @@
         "label": "Enrichment Positions"
       }
     ]
+  },
+  {
+    "id": "commerce-account",
+    "fields": [
+      {
+        "component": "text",
+        "name": "subpage",
+        "value": "myaccount",
+        "label": "Subpage"
+      }
+    ]
   }
 ]
