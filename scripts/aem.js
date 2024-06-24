@@ -192,6 +192,7 @@ function setup() {
       } else {
         [window.hlx.codeBasePath] = scriptURL.href.split('/scripts/scripts.js');
       }
+      window.hlx.basePath = window.hlx.codeBasePath.split('.resource')[0];
     } catch (error) {
       // eslint-disable-next-line no-console
       console.log(error);
