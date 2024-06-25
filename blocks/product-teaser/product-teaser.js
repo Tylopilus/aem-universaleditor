@@ -135,14 +135,14 @@ function renderProduct(product, config, block) {
       <div class="actions">
         ${
           config['details-button']
-            ? `<a href="/products/${urlKey}/${sku}" class="button primary">Details</a>`
+            ? `<a href="${window.hlx.basePath}/products/${urlKey}/${sku}" class="button primary">Details</a>`
             : ''
         }
         ${
           config['cart-button'] &&
           addToCartAllowed &&
           __typename === 'SimpleProductView'
-            ? '<button class="add-to-cart secondary">Add to Cart</button>'
+            ? '<button class="add-to-cart button secondary">Add to Cart</button>'
             : ''
         }
       </div>
@@ -180,6 +180,10 @@ function renderProduct(product, config, block) {
 
 export default async function decorate(block) {
   const config = readBlockConfig(block);
+  const options = config.multiselect.split(',').map((option) => option.trim());
+  options.forEach((option) => {
+    config[option] = true;
+  });
   config['details-button'] = !!(
     config['details-button'] || config['details-button'] === 'true'
   );
