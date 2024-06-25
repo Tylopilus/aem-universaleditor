@@ -318,7 +318,8 @@
                 "template": {
                   "model": "commerce-product-teaser",
                   "key-value": true,
-                  "name": "Product Teaser"
+                  "name": "Product Teaser",
+                  "sku": "FLEETCARD"
                 }
               }
             }
