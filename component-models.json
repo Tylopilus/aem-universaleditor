@@ -364,13 +364,13 @@
         "label": "SKU"
       },
       {
-        "component": "select",
-        "label": "Select",
-        "name": "select",
+        "component": "multiselect",
+        "name": "multiselect",
+        "label": "Teaser CTA Options",
         "valueType": "string",
         "options": [
-          { "name": "Option 1", "value": "option1" },
-          { "name": "Option 2", "value": "option2" }
+          { "name": "Add to Cart CTA", "value": "option1" },
+          { "name": "Details CTA", "value": "option2" }
         ]
       }
     ]
