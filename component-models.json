@@ -364,13 +364,13 @@
         "label": "SKU"
       },
       {
-        "component": "checkbox-group",
-        "label": "Options",
-        "name": "checkbox",
-        "valueType": "string[]",
+        "component": "select",
+        "label": "Select",
+        "name": "select",
+        "valueType": "string",
         "options": [
-          { "name": "Show Details Button", "value": "details-button" },
-          { "name": "Show Add to Cart Button", "value": "cart-button" }
+          { "name": "Option 1", "value": "option1" },
+          { "name": "Option 2", "value": "option2" }
         ]
       }
     ]
