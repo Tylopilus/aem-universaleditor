@@ -354,5 +354,25 @@
         "label": "Subpage"
       }
     ]
+  },
+  {
+    "id": "commerce-product-teaser",
+    "fields": [
+      {
+        "component": "text",
+        "name": "sku",
+        "label": "SKU"
+      },
+      {
+        "component": "checkbox-group",
+        "label": "Options",
+        "name": "checkbox",
+        "valueType": "string[]",
+        "options": [
+          { "name": "Show Details Button", "value": "details-button" },
+          { "name": "Show Add to Cart Button", "value": "cart-button" }
+        ]
+      }
+    ]
   }
 ]

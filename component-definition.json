@@ -307,6 +307,22 @@
               }
             }
           }
+        },
+        {
+          "title": "Product Teaser",
+          "id": "commerce-product-teaser",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "model": "commerce-product-teaser",
+                  "key-value": true,
+                  "name": "Product Teaser"
+                }
+              }
+            }
+          }
         }
       ]
     }

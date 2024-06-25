@@ -32,7 +32,8 @@
       "commerce-checkout",
       "commerce-login",
       "commerce-account",
-      "commerce-create-account"
+      "commerce-create-account",
+      "commerce-product-teaser"
     ]
   },
   {
