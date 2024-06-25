@@ -319,7 +319,9 @@
                   "model": "commerce-product-teaser",
                   "key-value": true,
                   "name": "Product Teaser",
-                  "sku": "FLEETCARD"
+                  "sku": "FLEETCARD",
+                  "details-button": "true",
+                  "cart-button": "true"
                 }
               }
             }

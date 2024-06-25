@@ -187,7 +187,7 @@ export default async function decorate(block) {
     config['cart-button'] || config['cart-button'] === 'true'
   );
 
-  renderPlaceholder(config, block);
+  // renderPlaceholder(config, block);
 
   const { products } = await performCatalogServiceQuery(productTeaserQuery, {
     sku: config.sku,
@@ -202,6 +202,8 @@ export default async function decorate(block) {
   }));
 
   const div = document.createElement('div');
+  block.innerHTML = '';
   block.appendChild(div);
+
   renderProduct(product, config, div);
 }
