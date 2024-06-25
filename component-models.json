@@ -369,8 +369,8 @@
         "label": "Teaser CTA Options",
         "valueType": "string",
         "options": [
-          { "name": "Add to Cart CTA", "value": "option1" },
-          { "name": "Details CTA", "value": "option2" }
+          { "name": "Add to Cart CTA", "value": "cart-button" },
+          { "name": "Details CTA", "value": "details-button" }
         ]
       }
     ]
