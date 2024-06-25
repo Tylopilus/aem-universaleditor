@@ -142,7 +142,9 @@ function renderProduct(product, config, block) {
           config['cart-button'] &&
           addToCartAllowed &&
           __typename === 'SimpleProductView'
-            ? '<button class="add-to-cart button secondary">Add to Cart</button>'
+            ? `<button class="add-to-cart button ${
+                config['details-button'] ? 'secondary' : 'primary'
+              }">Add to Cart</button>`
             : ''
         }
       </div>
