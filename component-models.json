@@ -408,9 +408,9 @@
       },
       {
         "component": "select",
-        "name": "titleType",
+        "name": "foreground_titleType",
         "value": "h2",
-        "label": "foreground_Title Type",
+        "label": "Title Type",
         "valueType": "string",
         "options": [
           { "name": "h2", "value": "h2" },
